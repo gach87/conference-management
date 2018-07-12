@@ -1,19 +1,20 @@
 image: microsoft/dotnet:latest
-
 stages:
   - build
   - test
-
 before_script:
   - "dotnet restore src"
   - "dotnet restore tests"
-
 project-debug:
+  before_script:
+  - "dotnet restore src"
   stage: build
   script:
     - "cd src"
     - "dotnet publish"
-project-debug:
+test-project-debug:
+  before_script:
+  - "dotnet restore tests"
   stage: test
   script:
     - "cd tests"
