@@ -1,0 +1,7 @@
+{
+    "dotnet-test-explorer.testProjectPath":"tests",
+    "dotnet-test-explorer.restore": true,
+    "dotnet-test-explorer.build": true,
+    "dotnet-test-explorer.autoWatch": true,
+    "dotnet-test-explorer.showCodeLens": true
+}
